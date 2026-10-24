@@ -1,398 +1,133 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gujarati Cultural Association (GCA) - Golden Triangle</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        velvet: { 800: '#5C121E', 900: '#4A0E17', 950: '#2F080E' },
-                        gold: { 300: '#F3E5AB', 400: '#E6C667', 500: '#D4AF37', 600: '#AA820A' },
-                        ivory: '#FAF6F0',
-                    },
-                    fontFamily: {
-                        serif: ['Playfair Display', 'Cinzel', 'serif'],
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,800;1,400&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        body { font-family: 'Inter', sans-serif; background-color: #FAF6F0; color: #2F080E; }
-        .heading-font { font-family: 'Cinzel', 'Playfair Display', serif; }
-
-        /* Custom Scrollbar */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #FAF6F0; }
-        ::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 4px; }
-        ::-webkit-scrollbar-thumb:hover { background: #AA820A; }
-
-        /* Mandala Accent Background */
-        .mandala-bg {
-            background-image: radial-gradient(circle at 50% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 60%),
-                              url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4af37' fill-opacity='0.05'%3E%3Cpath d='M40 0L50 30L80 40L50 50L40 80L30 50L0 40L30 30Z'/%3E%3Ccircle cx='40' cy='40' r='10' fill='none' stroke='%23d4af37' stroke-opacity='0.08' stroke-width='2'/%3E%3C/g%3E%3C/svg%3E");
-        }
-
-        /* Glassmorphism Effect */
-        .glass-panel {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(212, 175, 55, 0.25);
-        }
-        .glass-dark {
-            background: rgba(47, 8, 14, 0.90);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-        }
-
-        /* Shimmer Gold Effect */
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #FFE89C 0%, #D4AF37 50%, #AA820A 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .gold-gradient-bg {
-            background: linear-gradient(135deg, #E6C667 0%, #D4AF37 50%, #AA820A 100%);
-        }
-
-        .gold-gradient-bg:hover {
-            background: linear-gradient(135deg, #F3E5AB 0%, #E6C667 50%, #D4AF37 100%);
-        }
-
-        /* Card Glow Shadows */
-        .gold-glow {
-            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.3);
-        }
-        .gold-glow:hover {
-            box-shadow: 0 15px 40px -5px rgba(212, 175, 55, 0.5);
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GCA Golden Triangle · Gujarati Cultural Association of Kitchener, Waterloo &amp; Cambridge</title>
+  <meta name="description" content="The Gujarati Cultural Association of the Golden Triangle brings families together across Kitchener, Waterloo and Cambridge through Navratri garba, Diwali, Gujarati classes and community seva.">
+  <meta property="og:title" content="GCA Golden Triangle">
+  <meta property="og:description" content="Gujarati culture, at home in Waterloo Region.">
+  <meta name="theme-color" content="#9f2a1f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+Gujarati:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
 </head>
-<body class="mandala-bg flex flex-col min-h-screen relative overflow-x-hidden">
+<body data-page="home">
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="site-header"></div>
 
-    <!-- TOP ANNOUNCEMENT BAR -->
-    <div class="bg-velvet-950 text-gold-300 text-xs py-2 px-4 border-b border-gold-500/30">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <span class="inline-block w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
-                <span>Welcome to Gujarati Cultural Association - Golden Triangle (KW-Cambridge)</span>
+  <main id="main">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero__grid">
+          <div>
+            <p class="eyebrow" data-bind="pages.heroEyebrow">Kitchener · Waterloo · Cambridge</p>
+            <p class="hero__guj" lang="gu" data-bind="pages.heroGujarati" data-hide-empty>આપણી સંસ્કૃતિ, આપણો પરિવાર</p>
+            <h1 data-bind="pages.heroTitle">A home for Gujarati culture in Waterloo Region.</h1>
+            <p class="hero__intro" data-bind="pages.heroIntro">We bring families together through Navratri garba, Diwali, language classes, seva and the everyday friendships that make a community.</p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="events.html">See what’s on</a>
+              <a class="arrow-link" href="membership.html">Join the association</a>
             </div>
-            <div class="flex items-center gap-4">
-                <a href="mailto:info@gcagoldentriangle.ca" class="hover:text-white transition" id="topNavEmail"><i class="fas fa-envelope mr-1"></i>info@gcagoldentriangle.ca</a>
-                <button onclick="openAdminModal()" class="bg-gold-500/20 hover:bg-gold-500 hover:text-velvet-950 text-gold-400 text-xs px-2.5 py-0.5 rounded-full border border-gold-500/40 transition font-semibold">
-                    <i class="fas fa-user-shield mr-1"></i> Admin Panel
-                </button>
-            </div>
+          </div>
+          <div id="next-up"></div>
         </div>
-    </div>
-
-    <!-- MAIN HEADER / NAVIGATION -->
-    <header class="sticky top-0 z-40 bg-velvet-900/95 backdrop-blur-md text-white border-b border-gold-500/30 shadow-xl">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-            <!-- Brand Logo & Title -->
-            <a href="#home" class="flex items-center gap-3 group">
-                <div id="siteLogoContainer" class="w-12 h-12 rounded-full bg-gradient-to-tr from-gold-600 via-gold-400 to-gold-300 p-0.5 shadow-lg group-hover:scale-105 transition">
-                    <img id="siteLogoImg" src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?auto=format&fit=crop&w=150&q=80" alt="GCA Logo" class="w-full h-full object-cover rounded-full">
-                </div>
-                <div>
-                    <h1 id="siteTitle" class="heading-font text-xl font-bold tracking-wide text-gold-300">GCA Golden Triangle</h1>
-                    <p class="text-[10px] tracking-widest text-gold-400/80 uppercase font-semibold">Kitchener • Waterloo • Cambridge</p>
-                </div>
-            </a>
-
-            <!-- Desktop Nav Links -->
-            <nav class="hidden lg:flex items-center space-x-6 text-sm font-medium">
-                <a href="#home" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400">Home</a>
-                <a href="#about" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400">About</a>
-                <a href="#gods" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400"><i class="fas fa-om text-gold-400 mr-1"></i>Deities & Shrine</a>
-                <a href="#events" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400">Events</a>
-                <a href="#gallery" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400">Gallery</a>
-                <a href="#store" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400">Store & Tickets</a>
-                <a href="#membership" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400">Membership</a>
-                <a href="#sponsors" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400">Sponsors</a>
-                <a href="#contact" class="hover:text-gold-400 transition py-1 border-b-2 border-transparent hover:border-gold-400">Contact</a>
-            </nav>
-
-            <!-- Actions Right -->
-            <div class="flex items-center gap-3">
-                <button onclick="toggleCartDrawer()" class="relative bg-velvet-800 hover:bg-gold-500 hover:text-velvet-950 text-gold-300 p-2.5 rounded-full border border-gold-500/40 transition">
-                    <i class="fas fa-shopping-bag text-lg"></i>
-                    <span id="cartBadge" class="absolute -top-1 -right-1 bg-gold-400 text-velvet-950 font-bold text-xs w-5 h-5 rounded-full flex items-center justify-center border-2 border-velvet-900 shadow">0</span>
-                </button>
-                <a href="#membership" class="hidden sm:inline-block gold-gradient-bg text-velvet-950 px-4 py-2 rounded-full font-semibold text-xs tracking-wider uppercase shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5">
-                    Join GCA
-                </a>
-                <button onclick="toggleMobileMenu()" class="lg:hidden text-gold-400 text-2xl p-2 focus:outline-none">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-        </div>
-
-        <!-- Mobile Drawer Menu -->
-        <div id="mobileMenu" class="hidden lg:hidden bg-velvet-950 border-b border-gold-500/30 px-6 py-4 space-y-3">
-            <a href="#home" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1">Home</a>
-            <a href="#about" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1">About</a>
-            <a href="#gods" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1"><i class="fas fa-om text-gold-400 mr-1"></i>Deities & Shrine</a>
-            <a href="#events" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1">Events</a>
-            <a href="#gallery" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1">Gallery</a>
-            <a href="#store" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1">Store & Tickets</a>
-            <a href="#membership" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1">Membership</a>
-            <a href="#sponsors" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1">Sponsors</a>
-            <a href="#contact" onclick="toggleMobileMenu()" class="block text-gold-200 hover:text-gold-400 py-1">Contact</a>
-            <button onclick="openAdminModal(); toggleMobileMenu();" class="w-full text-left text-gold-400 pt-2 border-t border-gold-500/20 font-semibold"><i class="fas fa-user-shield mr-2"></i> Admin Panel</button>
-        </div>
-    </header>
-
-    <!-- HERO SECTION -->
-    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-velvet-950 text-white overflow-hidden py-20">
-        <!-- Hero Background Image with Overlay -->
-        <div class="absolute inset-0 z-0">
-            <img id="heroBgImg" src="https://images.unsplash.com/photo-1514222709107-a180c68d72b4?auto=format&fit=crop&w=1920&q=80" alt="Gujarati Culture Hero" class="w-full h-full object-cover opacity-25">
-            <div class="absolute inset-0 bg-gradient-to-t from-velvet-950 via-velvet-950/70 to-transparent"></div>
-            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-transparent via-velvet-950/50 to-velvet-950"></div>
-        </div>
-
-        <div class="relative z-10 max-w-5xl mx-auto text-center px-4">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/40 mb-6 backdrop-blur-md">
-                <i class="fas fa-om text-gold-400"></i>
-                <span class="text-xs uppercase tracking-widest text-gold-300 font-semibold">Preserving Heritage • Uniting Community</span>
-            </div>
-
-            <h1 id="heroHeadline" class="heading-font text-4xl sm:text-6xl md:text-7xl font-bold mb-6 text-white leading-tight">
-                Celebrating Gujarati Culture.<br>
-                <span class="gold-gradient-text">Bringing Our Community Together.</span>
-            </h1>
-
-            <p id="heroSubtext" class="text-base sm:text-xl text-gold-100/90 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-                Connecting families across Kitchener, Waterloo, and Cambridge through vibrant Navratri Garba celebrations, Diwali Galas, youth programs, language learning, and cultural fellowship.
-            </p>
-
-            <div class="flex flex-wrap justify-center gap-4 mb-16">
-                <a href="#events" class="gold-gradient-bg text-velvet-950 px-8 py-4 rounded-full font-bold text-sm tracking-wider uppercase shadow-xl hover:shadow-gold-500/30 transition transform hover:-translate-y-1 flex items-center gap-2">
-                    <i class="fas fa-calendar-alt"></i> Explore Upcoming Events
-                </a>
-                <a href="#membership" class="bg-velvet-800/80 hover:bg-velvet-800 text-gold-300 border border-gold-500/50 px-8 py-4 rounded-full font-bold text-sm tracking-wider uppercase shadow-xl backdrop-blur-md transition transform hover:-translate-y-1 flex items-center gap-2">
-                    <i class="fas fa-id-card"></i> Become a Member
-                </a>
-            </div>
-
-            <!-- Live Stats Counters -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-10 border-t border-gold-500/20 max-w-4xl mx-auto">
-                <div class="p-4 rounded-2xl glass-dark">
-                    <p class="heading-font text-3xl sm:text-4xl font-bold text-gold-400">30+</p>
-                    <p class="text-xs text-gold-200/80 uppercase tracking-wider mt-1">Years of Legacy</p>
-                </div>
-                <div class="p-4 rounded-2xl glass-dark">
-                    <p class="heading-font text-3xl sm:text-4xl font-bold text-gold-400">5,000+</p>
-                    <p class="text-xs text-gold-200/80 uppercase tracking-wider mt-1">Active Families</p>
-                </div>
-                <div class="p-4 rounded-2xl glass-dark">
-                    <p class="heading-font text-3xl sm:text-4xl font-bold text-gold-400">12+</p>
-                    <p class="text-xs text-gold-200/80 uppercase tracking-wider mt-1">Annual Events</p>
-                </div>
-                <div class="p-4 rounded-2xl glass-dark">
-                    <p class="heading-font text-3xl sm:text-4xl font-bold text-gold-400">100%</p>
-                    <p class="text-xs text-gold-200/80 uppercase tracking-wider mt-1">Volunteer Driven</p>
-                </div>
-            </div>
-        </div>
+        <div class="stats" id="stats"></div>
+      </div>
     </section>
 
-    <!-- SECTION 2: DEITIES & SHRINE (GODS GALLERY WITH FULL ADMIN ACCESS) -->
-    <section id="gods" class="py-20 bg-gradient-to-b from-velvet-950 to-velvet-900 text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <div class="inline-block p-3 rounded-full bg-gold-500/10 border border-gold-500/30 mb-3">
-                    <i class="fas fa-om text-2xl text-gold-400"></i>
-                </div>
-                <h2 class="heading-font text-3xl sm:text-5xl font-bold gold-gradient-text mb-4">Divine Blessings & Shrine</h2>
-                <p class="text-gold-100/80 text-sm sm:text-base">Honouring our traditions, divine deities, and spiritual heritage. You can edit, replace, or add pictures of Gods & Goddesses directly from the Admin Panel.</p>
-            </div>
-
-            <!-- Dynamic Gods Cards Container -->
-            <div id="godsContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Rendered dynamically -->
-            </div>
+    <section class="section" aria-labelledby="whats-on">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Calendar</p>
+            <h2 id="whats-on">What’s on</h2>
+          </div>
+          <div class="section-head__aside">
+            <p>Festivals, classes and get-togethers across the region. Members save on every ticket.</p>
+            <a class="arrow-link" href="events.html">Full calendar</a>
+          </div>
         </div>
+        <div class="schedule" id="home-schedule"></div>
+      </div>
     </section>
 
-    <!-- ABOUT SECTION -->
-    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            <div class="lg:col-span-6 space-y-6">
-                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-600 text-xs font-semibold uppercase tracking-wider">
-                    <i class="fas fa-heart text-velvet-800"></i> Our Mission & Heritage
-                </div>
-                <h2 class="heading-font text-3xl sm:text-4xl font-bold text-velvet-900">Nurturing Gujarati Heritage in Waterloo Region</h2>
-                <p id="aboutMissionText" class="text-gray-700 leading-relaxed text-sm sm:text-base">
-                    The Gujarati Cultural Association (GCA) of Golden Triangle is a non-profit community organization dedicated to preserving and celebrating the rich culture, traditions, and language of Gujarat across Kitchener, Waterloo, Cambridge, and surrounding townships.
-                </p>
-
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-                    <div class="p-4 rounded-xl bg-white border border-gold-500/20 shadow-sm flex gap-3 items-start">
-                        <div class="w-10 h-10 rounded-lg bg-velvet-900 text-gold-400 flex items-center justify-center shrink-0 font-bold"><i class="fas fa-music"></i></div>
-                        <div>
-                            <h4 class="font-bold text-velvet-900 text-sm">Grand Garba Nights</h4>
-                            <p class="text-xs text-gray-600 mt-0.5">Ontario's most authentic Navratri Raas-Garba gatherings.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 rounded-xl bg-white border border-gold-500/20 shadow-sm flex gap-3 items-start">
-                        <div class="w-10 h-10 rounded-lg bg-velvet-900 text-gold-400 flex items-center justify-center shrink-0 font-bold"><i class="fas fa-book-open"></i></div>
-                        <div>
-                            <h4 class="font-bold text-velvet-900 text-sm">Gujarati Pathshala</h4>
-                            <p class="text-xs text-gray-600 mt-0.5">Language & cultural education classes for youth.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 rounded-xl bg-white border border-gold-500/20 shadow-sm flex gap-3 items-start">
-                        <div class="w-10 h-10 rounded-lg bg-velvet-900 text-gold-400 flex items-center justify-center shrink-0 font-bold"><i class="fas fa-users"></i></div>
-                        <div>
-                            <h4 class="font-bold text-velvet-900 text-sm">Seniors & Youth Club</h4>
-                            <p class="text-xs text-gray-600 mt-0.5">Active sports, social check-ins, and mentorship.</p>
-                        </div>
-                    </div>
-                    <div class="p-4 rounded-xl bg-white border border-gold-500/20 shadow-sm flex gap-3 items-start">
-                        <div class="w-10 h-10 rounded-lg bg-velvet-900 text-gold-400 flex items-center justify-center shrink-0 font-bold"><i class="fas fa-hands-helping"></i></div>
-                        <div>
-                            <h4 class="font-bold text-velvet-900 text-sm">Community Outreach</h4>
-                            <p class="text-xs text-gray-600 mt-0.5">Food drives, newcomer support, and charity galas.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="lg:col-span-6 relative">
-                <div class="relative mx-auto max-w-md lg:max-w-none">
-                    <div class="aspect-4/3 rounded-3xl overflow-hidden shadow-2xl border-4 border-gold-400/40 relative">
-                        <img src="https://images.unsplash.com/photo-1545232979-fbf43b48227b?auto=format&fit=crop&w=800&q=80" alt="Cultural Celebration" class="w-full h-full object-cover">
-                    </div>
-                    <div class="absolute -bottom-6 -left-6 bg-velvet-900 text-white p-6 rounded-2xl shadow-2xl border border-gold-400/40 max-w-xs hidden sm:block">
-                        <p class="text-xs text-gold-400 uppercase tracking-widest font-bold">Annual Grand Gala</p>
-                        <p class="text-lg font-bold heading-font mt-1">Bringing 5000+ Gujarati hearts together</p>
-                    </div>
-                </div>
-            </div>
+    <section class="section section--alt" aria-labelledby="about-title">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">Who we are</p>
+          <h2 id="about-title" data-bind="pages.missionTitle">Keeping the culture alive, one gathering at a time.</h2>
+          <p class="lead" data-bind="pages.mission">The Gujarati Cultural Association of the Golden Triangle is a non-profit community organization serving Gujarati families across Kitchener, Waterloo, Cambridge and the surrounding townships.</p>
+          <a class="arrow-link mt-2" href="about.html">Our story</a>
         </div>
+        <ol class="programs" id="programs" aria-label="Programs"></ol>
+      </div>
     </section>
 
-    <!-- UPCOMING EVENTS SECTION -->
-    <section id="events" class="py-20 bg-stone-100/80 border-y border-gold-500/20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
-                <div>
-                    <span class="text-velvet-900 font-bold text-xs uppercase tracking-widest"><i class="fas fa-star text-gold-500 mr-1"></i> Community Calendar</span>
-                    <h2 class="heading-font text-3xl sm:text-5xl font-bold text-velvet-900 mt-1">Upcoming Events & Tickets</h2>
-                </div>
-                <!-- Category Filter Pills -->
-                <div class="flex flex-wrap gap-2 mt-4 md:mt-0" id="eventFilterPills">
-                    <button onclick="filterEvents('all')" class="event-filter-btn active bg-velvet-900 text-gold-300 px-4 py-2 rounded-full text-xs font-semibold shadow">All Events</button>
-                    <button onclick="filterEvents('Cultural')" class="event-filter-btn bg-white text-gray-700 hover:bg-gold-100 px-4 py-2 rounded-full text-xs font-semibold border border-gray-300">Cultural</button>
-                    <button onclick="filterEvents('Sports')" class="event-filter-btn bg-white text-gray-700 hover:bg-gold-100 px-4 py-2 rounded-full text-xs font-semibold border border-gray-300">Sports & Youth</button>
-                    <button onclick="filterEvents('Religious')" class="event-filter-btn bg-white text-gray-700 hover:bg-gold-100 px-4 py-2 rounded-full text-xs font-semibold border border-gray-300">Religious</button>
-                </div>
-            </div>
-
-            <!-- Dynamic Events Grid -->
-            <div id="eventsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Rendered Dynamically via JS -->
-            </div>
+    <section class="section section--dark" id="darshan" aria-labelledby="darshan-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Darshan · <span class="guj" lang="gu">દર્શન</span></p>
+            <h2 id="darshan-title">Where every celebration begins</h2>
+          </div>
+          <p data-bind="pages.darshanIntro">Every celebration begins with a prayer.</p>
         </div>
+        <div class="deities" id="deities"></div>
+      </div>
     </section>
 
-    <!-- PHOTO GALLERY SECTION -->
-    <section id="gallery" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-12">
-            <span class="text-gold-600 font-bold text-xs uppercase tracking-widest"><i class="fas fa-camera text-gold-500 mr-1"></i> Memories & Moments</span>
-            <h2 class="heading-font text-3xl sm:text-5xl font-bold text-velvet-900 mt-1">GCA Photo Gallery</h2>
-            <p class="text-gray-600 text-sm mt-3">Relive the joyous celebrations across Navratri, Holi, Diwali, and community picnics.</p>
-
-            <!-- Gallery Filters -->
-            <div class="flex flex-wrap justify-center gap-2 mt-6" id="galleryFilterPills">
-                <button onclick="filterGallery('all')" class="gallery-filter-btn active bg-velvet-900 text-gold-300 px-4 py-1.5 rounded-full text-xs font-semibold shadow">All Photos</button>
-                <button onclick="filterGallery('Navratri')" class="gallery-filter-btn bg-white text-gray-700 hover:bg-gold-100 px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-200">Navratri</button>
-                <button onclick="filterGallery('Diwali')" class="gallery-filter-btn bg-white text-gray-700 hover:bg-gold-100 px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-200">Diwali</button>
-                <button onclick="filterGallery('Picnic')" class="gallery-filter-btn bg-white text-gray-700 hover:bg-gold-100 px-4 py-1.5 rounded-full text-xs font-semibold border border-gray-200">Picnics & Youth</button>
-            </div>
+    <section class="section" id="gallery" aria-labelledby="gallery-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Gallery</p>
+            <h2 id="gallery-title">Memories from the dance floor</h2>
+          </div>
+          <div class="section-head__aside">
+            <p data-bind="pages.galleryIntro">Moments from garba nights, Diwali dinners, picnics and everything in between.</p>
+            <a class="arrow-link" href="gallery.html">All photos</a>
+          </div>
         </div>
-
-        <!-- Dynamic Gallery Grid -->
-        <div id="galleryContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Rendered Dynamically -->
-        </div>
+        <div class="mosaic" id="home-gallery"></div>
+      </div>
     </section>
 
-    <!-- COMMUNITY STORE & TICKET STORE SECTION -->
-    <section id="store" class="py-20 bg-velvet-950 text-white relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-14">
-                <div class="inline-block p-3 rounded-full bg-gold-500/10 border border-gold-500/30 mb-3">
-                    <i class="fas fa-store text-2xl text-gold-400"></i>
-                </div>
-                <h2 class="heading-font text-3xl sm:text-5xl font-bold gold-gradient-text mb-4">Official Store & Event Tickets</h2>
-                <p class="text-gold-100/80 text-sm sm:text-base">Purchase Garba passes, Dandiya sticks, traditional attire accessories, and membership passes securely online.</p>
-            </div>
-
-            <!-- Dynamic Store Items Grid -->
-            <div id="storeContainer" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Rendered Dynamically -->
-            </div>
+    <section class="section section--alt" aria-labelledby="members-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Membership</p>
+            <h2 id="members-title">Become part of the association</h2>
+          </div>
+          <p data-bind="pages.membershipIntro">Membership keeps the association running.</p>
         </div>
+        <div class="plans" id="home-plans"></div>
+      </div>
     </section>
 
-    <!-- MEMBERSHIP PLANS SECTION -->
-    <section id="membership" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <span class="text-gold-600 font-bold text-xs uppercase tracking-widest"><i class="fas fa-users text-gold-500 mr-1"></i> Stronger Together</span>
-            <h2 class="heading-font text-3xl sm:text-5xl font-bold text-velvet-900 mt-1">GCA Membership Plans</h2>
-            <p class="text-gray-600 text-sm sm:text-base mt-3">Enjoy discounted event passes, voting rights at AGM, access to language school, and priority seating.</p>
+    <section class="section" aria-labelledby="sponsors-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Sponsors</p>
+            <h2 id="sponsors-title">Support your community.</h2>
+          </div>
+          <div class="section-head__aside">
+            <p data-bind="pages.sponsorIntro">Local businesses make our events possible.</p>
+            <a class="arrow-link" href="contact.html?topic=Sponsorship">Become a sponsor</a>
+          </div>
         </div>
+        <div id="home-sponsors"></div>
+      </div>
+    </section>
+  </main>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <!-- Single Annual -->
-            <div class="bg-white rounded-3xl p-8 border border-gold-500/30 shadow-lg hover:shadow-xl transition flex flex-col justify-between">
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-gold-600 bg-gold-100 px-3 py-1 rounded-full">Individual</span>
-                    <h3 class="heading-font text-2xl font-bold text-velvet-900 mt-4">Single Annual</h3>
-                    <div class="my-4">
-                        <span class="text-4xl font-extrabold text-velvet-900">$30</span>
-                        <span class="text-gray-500 text-sm">/ year</span>
-                    </div>
-                    <ul class="space-y-3 text-xs sm:text-sm text-gray-600 mb-8">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Free entry to annual picnic</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> $5 off every Navratri Garba ticket</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Voting rights for AGM</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-600"></i> Monthly newsletter & updates</li>
-                    </ul>
-                </div>
-                <button onclick="registerMembership('Single Annual', 30)" class="w-full bg-velvet-900 hover:bg-velvet-800 text-gold-300 font-bold py-3 rounded-full text-xs uppercase tracking-wider transition">Select Plan</button>
-            </div>
-
-            <!-- Family Annual (Featured) -->
-            <div class="bg-gradient-to-b from-velvet-950 to-velvet-900 text-white rounded-3xl p-8 border-2 border-gold-400 shadow-2xl relative flex flex-col justify-between transform lg:-translate-y-4">
-                <div class="absolute -top-4 left-1/2 -translate-x-1/2 gold-gradient-bg text-velvet-950 text-[10px] font-extrabold uppercase tracking-widest px-4 py-1 rounded-full shadow">Most Popular</div>
-                <div>
-                    <span class="text-xs font-bold uppercase tracking-widest text-gold-300 bg-gold-500/20 px-3 py-1 rounded-full">Whole Household</span>
-                    <h3 class="heading-font text-2xl font-bold gold-gradient-text mt-4">Family Annual</h3>
-                    <div class="my-4">
-                        <span class="text-4xl font-extrabold text-gold-400">$50</span>
-                        <span class="text-gold-200/70 text-sm">/ year (Parents + Kids)</span>
-                    </div>
-                    <ul class="space-y-3 text-xs sm:text-sm text-gold-100/90 mb-8">
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold-400"></i> Includes spouse & dependent children</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold-400"></i> Discounted passes for all family members</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold-400"></i> Free entry to Annual Picnic & Sports Day</li>
-                        <li class="flex items-center gap-2"><i class="fas fa-check text-gold-400"></i> Priority Gujarati School enrollment</li>
-                    </ul>
-                </div>
-                <button onclick="registerMembership('Family Annual', 50)
+  <div id="site-footer"></div>
+  <script src="data/content.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

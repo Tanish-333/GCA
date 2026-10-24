@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · GCA Golden Triangle</title>
+  <meta name="description" content="Who we are: a volunteer-run, non-profit association for Gujarati families in Kitchener, Waterloo and Cambridge.">
+  <meta name="theme-color" content="#9f2a1f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+Gujarati:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="about">
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">About us</p>
+        <p class="page-head__guj" lang="gu" data-bind="settings.gujaratiName" data-hide-empty>ગુજરાતી કલ્ચરલ એસોસિએશન</p>
+        <h1 data-bind="pages.missionTitle">Keeping the culture alive, one gathering at a time.</h1>
+        <p data-bind="pages.mission">The Gujarati Cultural Association of the Golden Triangle is a non-profit community organization.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow">Our story</p><h2>Built by volunteers, for families</h2></div>
+        </div>
+        <div class="story" data-bind-html="pages.story"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="wrap about-grid">
+        <div>
+          <p class="eyebrow">What we do</p>
+          <h2>Programs that run all year</h2>
+          <p class="lead">Festivals are the highlights, but most of what we do happens in between: classes, sports, check-ins with our elders and seva across the region.</p>
+          <a class="arrow-link mt-2" href="events.html">See upcoming events</a>
+        </div>
+        <ol class="programs" id="about-programs"></ol>
+      </div>
+    </section>
+
+    <section class="section" id="committee-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow">Executive committee</p><h2>The people behind the events</h2></div>
+          <p>Elected each year at the Annual General Meeting. Every role is a volunteer role.</p>
+        </div>
+        <div class="people" id="committee"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="sponsor" aria-labelledby="sponsor-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="eyebrow">Sponsorship</p><h2 id="sponsor-title">Partner with the community</h2></div>
+          <div class="section-head__aside">
+            <p data-bind="pages.sponsorIntro">Local businesses make our events possible.</p>
+            <a class="btn btn--primary" href="contact.html?topic=Sponsorship">Talk to us about sponsoring</a>
+          </div>
+        </div>
+        <div id="about-sponsors"></div>
+        <div class="mt-4" id="about-sponsor-wall"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="data/content.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

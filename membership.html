@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Membership · GCA Golden Triangle</title>
+  <meta name="description" content="Join the Gujarati Cultural Association of the Golden Triangle. Individual, family and senior memberships.">
+  <meta name="theme-color" content="#9f2a1f">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Serif+Gujarati:wght@400;500&display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="membership">
+  <a class="skip" href="#main">Skip to content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="wrap">
+        <p class="eyebrow">Membership</p>
+        <p class="page-head__guj" lang="gu">સભ્યપદ</p>
+        <h1>Join the association</h1>
+        <p data-bind="pages.membershipIntro">Membership keeps the association running.</p>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="plans" id="membership-plans"></div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="join" aria-labelledby="join-title">
+      <div class="wrap two-col">
+        <div class="panel">
+          <form class="stack" id="membership-form" novalidate>
+            <div>
+              <h2 id="join-title">Membership application</h2>
+              <p class="muted">Memberships run for twelve months from the date we receive payment.</p>
+            </div>
+            <fieldset class="field" style="border:0;padding:0;margin:0">
+              <legend class="label" style="margin-bottom:10px">Plan</legend>
+              <div class="choice-group" id="plan-choices"></div>
+            </fieldset>
+            <div class="form-grid">
+              <div class="field"><label for="m-first">First name</label><input class="input" id="m-first" name="firstName" autocomplete="given-name" required></div>
+              <div class="field"><label for="m-last">Last name</label><input class="input" id="m-last" name="lastName" autocomplete="family-name" required></div>
+              <div class="field"><label for="m-email">Email</label><input class="input" id="m-email" name="email" type="email" autocomplete="email" required></div>
+              <div class="field"><label for="m-phone">Phone</label><input class="input" id="m-phone" name="phone" type="tel" autocomplete="tel"></div>
+              <div class="field span-2">
+                <label for="m-city">City</label>
+                <select class="select" id="m-city" name="city" required>
+                  <option value="">Choose your city</option>
+                  <option>Kitchener</option>
+                  <option>Waterloo</option>
+                  <option>Cambridge</option>
+                  <option>Guelph</option>
+                  <option>Elsewhere in the region</option>
+                </select>
+              </div>
+              <div class="field span-2" id="household-field">
+                <label for="m-household">Other household members</label>
+                <textarea class="textarea" id="m-household" name="household" rows="3" style="min-height:96px" placeholder="Name and age of each person, one per line"></textarea>
+                <small>So we can welcome everyone by name at events.</small>
+              </div>
+              <div class="field span-2">
+                <label for="m-heard">How did you hear about us? <span class="muted">(optional)</span></label>
+                <select class="select" id="m-heard" name="heard">
+                  <option value="">Select one</option>
+                  <option>Friends or family</option>
+                  <option>Navratri or another event</option>
+                  <option>WhatsApp group</option>
+                  <option>Social media</option>
+                  <option>Search engine</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <label class="check"><input type="checkbox" name="volunteer"><span>I’d like to hear about volunteering opportunities.</span></label>
+            <label class="check"><input type="checkbox" name="newsletter" checked><span>Send me the monthly newsletter.</span></label>
+            <label class="check"><input type="checkbox" name="consent" required><span>I agree to follow the association’s constitution and code of conduct.</span></label>
+            <button class="btn btn--primary btn--block" type="submit">Submit application</button>
+          </form>
+        </div>
+
+        <aside>
+          <p class="eyebrow">Good to know</p>
+          <ul class="info-list">
+            <li><span class="tag">Paying</span>After you apply, send your fee by Interac e-Transfer with your reference number. Your membership starts when payment arrives.</li>
+            <li><span class="tag">Renewing</span>We email a reminder a month before your membership ends. Renewing uses the same form.</li>
+            <li><span class="tag">Voting</span>Members in good standing for 30 days or more may vote at the Annual General Meeting.</li>
+            <li><span class="tag">Questions</span>Email us any time from the <a href="contact.html?topic=Membership">contact page</a>.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="data/content.js"></script>
+  <script src="assets/js/core.js"></script>
+  <script src="assets/js/site.js"></script>
+</body>
+</html>
